@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.table{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    min-height: 600px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.column_1{
+    border: 1px solid black;
+    width: 200px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.column_2{
+    border: 1px solid black;
+    padding: 0px 20px 10px;
+    /* padding:  0 20px 20px; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title_1{
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.drag{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px auto;
+    width: 100px;
+    text-align: center;
+    cursor: grab;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drop_text{
+    margin-top:10px;
+    padding: 10px;
+    width: 700px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+}
+.drop_text textarea{
+    resize: vertical;
+    outline: none;
+    width: 692px;
+}
+.drop_img{
+    padding: 10px;
+    max-width: 700px;
+    margin-top:10px;
+    border: 1px solid black;
+    width: fit-content;
+    background-color: aquamarine;
+}
+.drop_img img{
+    width: 100%;
+}
+.drop{
+    min-height: 100%;
 }
